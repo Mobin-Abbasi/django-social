@@ -1,0 +1,12 @@
+<h2>پست های سیو شده توسط شما</h2>
+<ul>
+    {% for post in saved_posts %}
+        <a href="{{ post.get_absolute_url }}">
+            {{ post.description |truncatewords:10 |linebreaks }}
+        </a>
+        published at {{ post.created }} by {{ post.author }}
+        <br>
+        <br>
+        <hr>
+    {% endfor %}
+</ul>

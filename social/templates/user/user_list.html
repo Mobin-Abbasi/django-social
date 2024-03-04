@@ -1,0 +1,16 @@
+{% load thumbnail %}
+{% load static %}
+{% for user in users %}
+    {% if user.photo %}
+        <a href="{{ user.get_absolute_url }}">
+        <img src="{% thumbnail user.photo 200x0 crop="0,0" %}">
+        </a>
+    {% else %}
+        <a href="{{ user.get_absolute_url }}">
+            <img src="{% static 'images/profile/Avatar.png' %}" style="width: 125px">
+        </a>
+    {% endif %}
+    <a href="{{ user.get_absolute_url }}">
+        {{ user.get_full_name }}
+    </a>
+{% endfor %}

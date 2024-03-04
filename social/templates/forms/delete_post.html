@@ -1,0 +1,14 @@
+
+      <div>
+    <h2> آیا از حذف پست ({{ post.title }})  مطمعن هستید؟ </h2>
+      <br>
+  		<a href="{% url 'social:profile' %}"> برگشت به صفحه پروفایل</a>
+  </div>
+    <br>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+        <button type="submit">حذف</button>
+        </div>
+
+    </form>

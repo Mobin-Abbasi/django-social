@@ -1,0 +1,15 @@
+
+    {% if comment %}
+      <div>
+        <h2>کامنت شما ثبت شد.</h2>
+          <br>
+      <a href="{{ post.get_absolute_url }}"> بازگشت به پست</a>
+      </div>
+
+    {% else %}
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="افزودن کامنت">
+    </form>
+    {% endif %}
