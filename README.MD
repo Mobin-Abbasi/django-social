@@ -29,16 +29,3 @@ This project was developed as a learning and portfolio-building initiative using
 ![Demo 1](https://github.com/rezadolati01/django-projects/blob/main/sabzsocial/social/static/img/demo/1.jpg)
 ![Demo 2](https://github.com/rezadolati01/django-projects/blob/main/sabzsocial/social/static/img/demo/2.jpg)
 ![Demo 3](https://github.com/rezadolati01/django-projects/blob/main/sabzsocial/social/static/img/demo/6.png)
-
----
-
-## 🛠 Requirements
-
-To run this project, you need:
-
-- Python 3.10 or higher
-- Django 5
-- Install the following dependencies:
-
-  ```bash
-  pip install pillow django-debug-toolbar django-taggit easy-thumbnails
